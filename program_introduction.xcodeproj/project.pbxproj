@@ -12,6 +12,10 @@
 		B0D654651FA499D700E2178B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D654631FA499D700E2178B /* Main.storyboard */; };
 		B0D654671FA499D700E2178B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D654661FA499D700E2178B /* Assets.xcassets */; };
 		B0D6546A1FA499D700E2178B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D654681FA499D700E2178B /* LaunchScreen.storyboard */; };
+		B0D654771FA4C4C800E2178B /* Storyboard_eve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D654751FA4C4C800E2178B /* Storyboard_eve.storyboard */; };
+		B0D654791FA4C68600E2178B /* Storyboard_maxnei.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D654781FA4C68600E2178B /* Storyboard_maxnei.storyboard */; };
+		B0D6547C1FA4CEAE00E2178B /* Stroyboard_aha.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D6547A1FA4CEAE00E2178B /* Stroyboard_aha.storyboard */; };
+		B0D6547E1FA4D2CA00E2178B /* Storyboard_chu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D6547D1FA4D2CA00E2178B /* Storyboard_chu.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		B0D654661FA499D700E2178B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0D654691FA499D700E2178B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0D6546B1FA499D700E2178B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0D654761FA4C4C800E2178B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = program_introduction/Base.lproj/Storyboard_eve.storyboard; sourceTree = "<group>"; };
+		B0D654781FA4C68600E2178B /* Storyboard_maxnei.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_maxnei.storyboard; sourceTree = "<group>"; };
+		B0D6547B1FA4CEAE00E2178B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = program_introduction/Base.lproj/Stroyboard_aha.storyboard; sourceTree = "<group>"; };
+		B0D6547D1FA4D2CA00E2178B /* Storyboard_chu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_chu.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,10 @@
 		B0D654531FA499D700E2178B = {
 			isa = PBXGroup;
 			children = (
+				B0D6547D1FA4D2CA00E2178B /* Storyboard_chu.storyboard */,
+				B0D6547A1FA4CEAE00E2178B /* Stroyboard_aha.storyboard */,
+				B0D654781FA4C68600E2178B /* Storyboard_maxnei.storyboard */,
+				B0D654751FA4C4C800E2178B /* Storyboard_eve.storyboard */,
 				B0D6545E1FA499D700E2178B /* program_introduction */,
 				B0D6545D1FA499D700E2178B /* Products */,
 			);
@@ -124,6 +136,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0D6546A1FA499D700E2178B /* LaunchScreen.storyboard in Resources */,
+				B0D6547E1FA4D2CA00E2178B /* Storyboard_chu.storyboard in Resources */,
+				B0D654771FA4C4C800E2178B /* Storyboard_eve.storyboard in Resources */,
+				B0D6547C1FA4CEAE00E2178B /* Stroyboard_aha.storyboard in Resources */,
+				B0D654791FA4C68600E2178B /* Storyboard_maxnei.storyboard in Resources */,
 				B0D654671FA499D700E2178B /* Assets.xcassets in Resources */,
 				B0D654651FA499D700E2178B /* Main.storyboard in Resources */,
 			);
@@ -158,6 +174,22 @@
 				B0D654691FA499D700E2178B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B0D654751FA4C4C800E2178B /* Storyboard_eve.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0D654761FA4C4C800E2178B /* Base */,
+			);
+			name = Storyboard_eve.storyboard;
+			sourceTree = "<group>";
+		};
+		B0D6547A1FA4CEAE00E2178B /* Stroyboard_aha.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0D6547B1FA4CEAE00E2178B /* Base */,
+			);
+			name = Stroyboard_aha.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -211,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -275,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M337VB9U6;
 				INFOPLIST_FILE = program_introduction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.program-introduction";
@@ -289,6 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M337VB9U6;
 				INFOPLIST_FILE = program_introduction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.program-introduction";
