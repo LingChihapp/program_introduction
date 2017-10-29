@@ -1,24 +1,568 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UQM-By-f1M">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Jasper-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="program_introduction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper1" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-qc-IYG">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7L-Fz-OD2">
+                                <rect key="frame" x="16" y="435" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="camera">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hrT-Ru-9a3" kind="show" id="quV-Zh-DMJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xat-tg-X1G">
+                                <rect key="frame" x="248" y="435" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="paper"/>
+                                <connections>
+                                    <segue destination="7hi-ca-73K" kind="show" id="kgB-yJ-6EB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Jasper" id="vqh-R9-CA4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-581.25" y="-975"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vWf-EJ-vl6">
+            <objects>
+                <viewController id="hrT-Ru-9a3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ByJ-u3-GSF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper2" translatesAutoresizingMaskIntoConstraints="NO" id="WYO-Ef-Dta">
+                                <rect key="frame" x="0.0" y="64" width="113" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="o2N-q4-L22" appends="YES" id="Emp-CM-CRp"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper3" translatesAutoresizingMaskIntoConstraints="NO" id="obs-v2-A62">
+                                <rect key="frame" x="114" y="64" width="206" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Agc-wD-i5F" appends="YES" id="cSa-Tn-LUD"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper4" translatesAutoresizingMaskIntoConstraints="NO" id="zyu-BD-hNn">
+                                <rect key="frame" x="1" y="193" width="215" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6KU-io-dmz" appends="YES" id="yAL-2s-B1s"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper5" translatesAutoresizingMaskIntoConstraints="NO" id="eTn-gE-Td6">
+                                <rect key="frame" x="216" y="193" width="104" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ndn-vI-fjN" appends="YES" id="ygg-ns-dOr"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper6" translatesAutoresizingMaskIntoConstraints="NO" id="CmD-vB-OEa">
+                                <rect key="frame" x="1" y="323" width="97" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gH0-Rf-ZRi" appends="YES" id="Ae0-jH-fxk"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper7" translatesAutoresizingMaskIntoConstraints="NO" id="PSR-Xm-hMS">
+                                <rect key="frame" x="97" y="323" width="105" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3Pc-WS-sZe" appends="YES" id="Sxk-CM-DIO"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper8" translatesAutoresizingMaskIntoConstraints="NO" id="oDG-RF-Pvt">
+                                <rect key="frame" x="203" y="323" width="117" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XZw-JY-HgZ" appends="YES" id="IFk-Mo-7jw"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper10" translatesAutoresizingMaskIntoConstraints="NO" id="AaF-ti-nw4">
+                                <rect key="frame" x="1" y="452" width="319" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Vzh-QB-EVJ" appends="YES" id="FRu-jn-7ez"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6fJ-U7-gPq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Od3-2v-bhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="o2N-q4-L22">
+                    <connections>
+                        <segue destination="fOP-SC-75L" kind="show" id="Pxx-YR-qHz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Agc-wD-i5F">
+                    <connections>
+                        <segue destination="Fho-tI-d55" kind="show" id="RLz-Eg-ZSm"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6KU-io-dmz">
+                    <connections>
+                        <segue destination="2bE-Yc-iOy" kind="show" id="TwU-gx-1fm"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ndn-vI-fjN">
+                    <connections>
+                        <segue destination="gWv-as-m7V" kind="show" id="rBh-oK-1NP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="gH0-Rf-ZRi">
+                    <connections>
+                        <segue destination="gZE-Lg-rGV" kind="show" id="9pG-Di-hkW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3Pc-WS-sZe">
+                    <connections>
+                        <segue destination="uTi-DZ-4oM" kind="show" id="LHU-34-Ald"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XZw-JY-HgZ">
+                    <connections>
+                        <segue destination="hRL-bA-NKF" kind="show" id="i4c-uo-hdj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Vzh-QB-EVJ">
+                    <connections>
+                        <segue destination="d1u-tZ-nqp" kind="show" id="ygc-2g-S6X"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="213.75" y="-157.3943661971831"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c6F-q3-Q5p">
+            <objects>
+                <viewController id="fOP-SC-75L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0d9-Wr-yrs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper2" translatesAutoresizingMaskIntoConstraints="NO" id="XEE-df-1Ln">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Wn4-kM-qOh" appends="YES" id="Usv-is-tDv"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="QP1-qG-kP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ri1-Qv-sxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Wn4-kM-qOh">
+                    <connections>
+                        <segue destination="hrT-Ru-9a3" kind="show" id="t9g-cH-Fmi"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1065" y="-157.3943661971831"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bU9-nG-yEl">
+            <objects>
+                <viewController id="7hi-ca-73K" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FDb-Ef-sKS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hP0-Gn-hw5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="532"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">藝名：陳小春
+本名 : 陳小臻
+羅馬拼音：Chan Siu Chun
+英文名：Jordan
+暱稱：小春、春爺、山雞哥
+國籍：香港 中國（香港）
+籍貫：廣東惠陽
+出生：1967年7月8日（50歲）中國廣東省惠州市
+職業：演員、歌手
+語言：粵語、普通話、客家話、英語
+配偶：應采兒（2010年結婚）
+兒子：陳胤捷（Jasper）2013年7月1日（4歲）
+音樂類型：粵語流行、華語流行
+演奏樂器：歌唱
+代表作品電影：
+《金枝玉葉》
+《古惑仔》系列
+《神偷諜影》
+《鹿鼎記》
+《不歡而散》
+《樹大招風》
+歌曲：
+《神啊！救救我》
+《犯賤》
+《我愛的人》
+《失戀王》
+《相依為命》
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="10F-M4-LAG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uwl-se-qBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="-976.05633802816908"/>
+        </scene>
+        <!--Jasper-->
+        <scene sceneID="OQO-Je-KDb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DbY-bM-H06" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xcB-BG-Lgq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Jasper" image="man-7" id="SB4-Y0-9MA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ejt-Qn-Tcl">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ej4-eH-PPG"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1541" y="-976"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Csq-hu-Jca">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UQM-By-f1M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qXQ-oz-4E3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xcB-BG-Lgq" kind="relationship" relationship="viewControllers" id="Ot9-Ls-iEB"/>
+                        <segue destination="DBk-OW-rin" kind="relationship" relationship="viewControllers" id="Q79-v0-frm"/>
+                        <segue destination="c16-rM-tn9" kind="relationship" relationship="viewControllers" id="esx-eG-1OL"/>
+                        <segue destination="rsS-7e-squ" kind="relationship" relationship="viewControllers" id="0Ss-oU-jkN"/>
+                        <segue destination="l9v-sT-maM" kind="relationship" relationship="viewControllers" id="VaI-ax-5SA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YYD-ib-LGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2353" y="-977"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2Ch-mZ-orE">
+            <objects>
+                <viewController id="gZE-Lg-rGV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yJp-cU-cZu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper6" translatesAutoresizingMaskIntoConstraints="NO" id="t5Q-cH-Fja">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bF2-VK-aaL" appends="YES" id="gv4-Hn-NEI"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="NMp-it-0nB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJZ-Hg-efh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bF2-VK-aaL">
+                    <connections>
+                        <segue destination="hrT-Ru-9a3" kind="show" id="Jxc-va-QnA"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="630" y="592.6056338028169"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FK1-wE-Cnw">
+            <objects>
+                <viewController id="gWv-as-m7V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZND-2w-wAU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper5" translatesAutoresizingMaskIntoConstraints="NO" id="FRl-rk-ZoS">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nCL-tG-Nov" appends="YES" id="hST-8X-BEw"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="VaZ-fB-fXW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P3y-hl-mfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nCL-tG-Nov">
+                    <connections>
+                        <segue destination="hrT-Ru-9a3" kind="show" id="57p-By-xgH"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-226.875" y="592.6056338028169"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="siW-fZ-dSH">
+            <objects>
+                <viewController id="2bE-Yc-iOy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TBP-Sw-gna">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper4" translatesAutoresizingMaskIntoConstraints="NO" id="UKe-3T-7pE">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ixn-aJ-ReB" appends="YES" id="9EI-rS-5aV"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="8LY-n8-yvP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oU4-br-LcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ixn-aJ-ReB">
+                    <connections>
+                        <segue destination="hrT-Ru-9a3" kind="show" id="MBm-iY-dLL"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1083.75" y="592.6056338028169"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6er-RK-PyD">
+            <objects>
+                <viewController id="uTi-DZ-4oM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="auz-rI-AlU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper7" translatesAutoresizingMaskIntoConstraints="NO" id="NRh-5T-jSj">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="d4s-9F-66x" appends="YES" id="a1V-kg-ybQ"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ZVU-N2-fR9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Q5-V0-39o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="d4s-9F-66x">
+                    <connections>
+                        <segue destination="hrT-Ru-9a3" kind="show" id="zOL-Sx-j22"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1477.5" y="592.6056338028169"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v5B-Hk-4A3">
+            <objects>
+                <viewController id="Fho-tI-d55" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1se-2t-3ja">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper3" translatesAutoresizingMaskIntoConstraints="NO" id="DqR-0M-OB9">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ald-M7-d2M" appends="YES" id="nKs-rz-rMR"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ERh-Si-zmO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Utm-vs-bCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ald-M7-d2M">
+                    <connections>
+                        <segue destination="hrT-Ru-9a3" kind="show" id="dPB-Fx-Ze6"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-686.25" y="-157.3943661971831"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KUs-g5-qqf">
+            <objects>
+                <viewController id="hRL-bA-NKF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kv3-W1-uDX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper8" translatesAutoresizingMaskIntoConstraints="NO" id="sBl-UV-2V4">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8aX-im-JZ9" appends="YES" id="sqr-md-z6G"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="1lu-qI-rVI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jb9-Dg-sn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8aX-im-JZ9">
+                    <connections>
+                        <segue destination="hrT-Ru-9a3" kind="show" id="J8J-eQ-v5p"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1875" y="-157.3943661971831"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gVH-gb-Qnc">
+            <objects>
+                <viewController id="d1u-tZ-nqp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BLx-Ue-scf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jasper10" translatesAutoresizingMaskIntoConstraints="NO" id="5mS-7C-XB6">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GgR-sg-bcY" appends="YES" id="W2d-c2-4Dn"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="zyP-cL-3cg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btr-Jt-I0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GgR-sg-bcY">
+                    <connections>
+                        <segue destination="hrT-Ru-9a3" kind="show" id="P7U-89-gfG"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1160.625" y="-977.11267605633805"/>
+        </scene>
+        <!--UINavigationController-n3m-kO-zhN-->
+        <scene sceneID="408-MV-FtE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Storyboard_eve" referencedIdentifier="UINavigationController-n3m-kO-zhN" id="DBk-OW-rin" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ceL-KS-TQM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M49-p9-sgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2352" y="-543"/>
+        </scene>
+        <!--Storyboard_maxnei-->
+        <scene sceneID="eMi-hG-fta">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Storyboard_maxnei" id="c16-rM-tn9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="VU2-fh-t7G"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ins-0Z-c3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2768" y="-544"/>
+        </scene>
+        <!--Stroyboard_aha-->
+        <scene sceneID="5Vq-D2-hJV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Stroyboard_aha" id="rsS-7e-squ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ozg-02-Dog"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNz-fH-s1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1985" y="-544"/>
+        </scene>
+        <!--Storyboard_chu-->
+        <scene sceneID="f3D-dN-wXJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Storyboard_chu" id="l9v-sT-maM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ufL-Qo-Xzb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oqf-ER-hA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2413" y="-132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="128" height="128"/>
+        <image name="jasper1" width="540" height="960"/>
+        <image name="jasper10" width="640" height="960"/>
+        <image name="jasper2" width="539" height="960"/>
+        <image name="jasper3" width="640" height="960"/>
+        <image name="jasper4" width="640" height="960"/>
+        <image name="jasper5" width="640" height="960"/>
+        <image name="jasper6" width="640" height="960"/>
+        <image name="jasper7" width="640" height="960"/>
+        <image name="jasper8" width="640" height="960"/>
+        <image name="man-7" width="29" height="30"/>
+        <image name="paper" width="128" height="128"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="quV-Zh-DMJ"/>
+    </inferredMetricsTieBreakers>
 </document>
